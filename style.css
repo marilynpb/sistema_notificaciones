@@ -1,0 +1,7 @@
+body{
+    background-color: rgb(184, 245, 245);
+}
+
+.nav-item:hover, .dropdown-item:hover{
+    background-color: chocolate!important;
+}
