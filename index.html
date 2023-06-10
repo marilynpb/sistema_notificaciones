@@ -5,28 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link rel="stylesheet" href="./style.css">
-    <title>Document</title>
+    <title>Home</title>
 </head>
 <body>
-    <nav class="navbar bg-warning m-0 p-0 pt-2">
+    <nav class="navbar bg-warning m-0 p-0 pt-2 px-5">
         <div class="container-fluid">
             <ul class="d-flex list-unstyled mt-1">
                 <li class="mx-2">
                     <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
+                    
                 </li>
+                <li><h5 class="m-2">Sistema Integral de Gestion Ambiental</h5></li>
             </ul>
-            <ul class="d-flex list-unstyled">
+            <ul class="d-flex list-unstyled mt-1">
                 <li class="mx-3">
-                    <a class="nav-link" href="#"><img src="./img/bell.svg"></a>
+                    <a class="nav-link" href="#"><img src="./img/bell.svg" width="22px"></a>
                 </li>
                 <li class="mx-3">
-                    <a class="nav-link" href="#"><img src="./img/envelope-open.svg"></a>
+                    <a class="nav-link" href="#"><img src="./img/envelope-open.svg" width="22px"></a>
                 </li>
-                <li class="mx-3 dropdown">
+                <li class="mx-3 dropdown"  style="font-size: 20px;">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    <img src="./img/person (1).svg"> Usuario
+                    <img src="./img/person (1).svg" width="22px"> Usuario
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                     <li><a class="dropdown-item" href="#"><img src="./img/box-arrow-left.svg"> Salir</a></li>
@@ -104,19 +106,19 @@
     </nav>
 
     <main>
-        <div class="container-fluid bg-body row">
+        <div class="container-fluid row my-5 mx-auto px-5">
             <div class="col-12 text-center d-flex justify-content-center align-items-center">
-                <a class="btn btn-lg mx-3 d-flex justify-content-center align-items-center" style="background-color: violet; width: 280px;">
+                <a class="btn btn-lg mx-3 d-flex justify-content-center align-items-center text-light" style="background-color: rgb(86, 15, 86); width: 280px; font-size: 25px;">
                     <img class="me-2" src="./img/plus-circle (1).svg"> Nueva
                 </a>
-                <a class="btn btn-lg mx-3 d-flex justify-content-center align-items-center" style="background-color: violet; width: 280px;">
+                <a class="btn btn-lg mx-3 d-flex justify-content-center align-items-center text-light" style="background-color: rgb(86, 32, 134); width: 280px; font-size: 25px;">
                     <img class="me-2" src="./img/plus-circle (1).svg"> Nueva
                 </a>
             </div>
 
-            <div class="col-12">
-                <button>Mostrar Inpecciones</button><br>
-                <div>
+            <div class="col-12 mt-5 bg-light p-4" style="box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;">
+                <button class="mostrar btn btn-secondary rounded-5 bg-transparent text-dark">Mostrar Inpecciones</button><br>
+                <div class="mt-4">
                     <label>Seleccione la cantidad de registro que desea ver
                     <select>
                         <option>5</option>
@@ -128,8 +130,8 @@
                         <option>Todos</option>
                     </select>
                     </label>
-                    <form class="overflow-scroll">
-                        <table class="table table-dark">
+                    <form class="overflow-scroll mt-2">
+                        <table class="table table-secondary">
                             <tbody>
                                 <tr>
                                     <th scope="row">Acción</th>
@@ -143,7 +145,7 @@
                                     <td>@twitter</td>
                                 </tr>
                                 <tr>
-                                    <th scope="row"><button class="btn bg-success text-light"><img src="./img/search.svg"> Buscar</button></th>
+                                    <th scope="row"><button class="btn bg-success text-light d-flex align-items-center">Buscar <img class="ms-2" src="./img/search.svg"></button></th>
                                     <td>
                                         <input type="text">
                                     </td>
@@ -169,7 +171,179 @@
                                     </td>
                                 </tr>
                                 <tr>
-                                    <th scope="row"><button class="btn bg-primary text-light"><img src="./img/arrow-counterclockwise.svg"> Reiciar</button></th>
+                                    <th scope="row"><button class="btn bg-primary text-light d-flex align-items-center">Reiniciar <img class="ms-2" src="./img/arrow-counterclockwise.svg"></button></th>
+                                    <td>
+                                        <input type="text">
+                                    </td>
+                                    <td>
+                                        <input type="text">
+                                    </td>
+                                    <td>
+                                        <input type="text">
+                                    </td>
+                                    <td>
+                                        <input type="text">
+                                    </td>
+                                    <td>
+                                        <input type="text">
+                                    </td>
+                                    <td>
+                                        <input type="text">
+                                    </td>
+                                    <td><input type="text">
+                                    </td>
+                                    <td>
+                                        <input type="text">
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </form>
+                </div>
+            </div>
+
+            <div class="col-12 mt-5 bg-light p-4"  style="box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;">
+                <button class="mostrar btn btn-secondary rounded-5 bg-transparent text-dark">Mostrar Inpecciones</button><br>
+                <div class="mt-4">
+                    <label>Seleccione la cantidad de registro que desea ver
+                    <select>
+                        <option>5</option>
+                        <option>20</option>
+                        <option>50</option>
+                        <option>100</option>
+                        <option>150</option>
+                        <option>200</option>
+                        <option>Todos</option>
+                    </select>
+                    </label>
+                    <form class="overflow-scroll mt-2">
+                        <table class="table table-secondary">
+                            <tbody>
+                                <tr>
+                                    <th scope="row">Acción</th>
+                                    <td>Larry the Bird</td>
+                                    <td>@twitter</td>
+                                    <td>Larry the Bird</td>
+                                    <td>@twitter</td>
+                                    <td>Larry the Bird</td>
+                                    <td>@twitter</td>
+                                    <td>Larry the Bird</td>
+                                    <td>@twitter</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"><button class="btn bg-success text-light d-flex align-items-center">Buscar <img class="ms-2" src="./img/search.svg"></button></th>
+                                    <td>
+                                        <input type="text">
+                                    </td>
+                                    <td>
+                                        <input type="text">
+                                    </td>
+                                    <td>
+                                        <input type="text">
+                                    </td>
+                                    <td>
+                                        <input type="text">
+                                    </td>
+                                    <td>
+                                        <input type="text">
+                                    </td>
+                                    <td>
+                                        <input type="text">
+                                    </td>
+                                    <td><input type="text">
+                                    </td>
+                                    <td>
+                                        <input type="text">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"><button class="btn bg-primary text-light d-flex align-items-center">Reiniciar <img class="ms-2" src="./img/arrow-counterclockwise.svg"></button></th>
+                                    <td>
+                                        <input type="text">
+                                    </td>
+                                    <td>
+                                        <input type="text">
+                                    </td>
+                                    <td>
+                                        <input type="text">
+                                    </td>
+                                    <td>
+                                        <input type="text">
+                                    </td>
+                                    <td>
+                                        <input type="text">
+                                    </td>
+                                    <td>
+                                        <input type="text">
+                                    </td>
+                                    <td><input type="text">
+                                    </td>
+                                    <td>
+                                        <input type="text">
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </form>
+                </div>
+            </div>
+
+            <div class="col-12 mt-5 bg-light p-4"  style="box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;">
+                <button class="mostrar btn btn-secondary rounded-5 bg-transparent text-dark">Mostrar Inpecciones</button><br>
+                <div class="mt-4">
+                    <label>Seleccione la cantidad de registro que desea ver
+                    <select>
+                        <option>5</option>
+                        <option>20</option>
+                        <option>50</option>
+                        <option>100</option>
+                        <option>150</option>
+                        <option>200</option>
+                        <option>Todos</option>
+                    </select>
+                    </label>
+                    <form class="overflow-scroll mt-2">
+                        <table class="table table-secondary">
+                            <tbody>
+                                <tr>
+                                    <th scope="row">Acción</th>
+                                    <td>Larry the Bird</td>
+                                    <td>@twitter</td>
+                                    <td>Larry the Bird</td>
+                                    <td>@twitter</td>
+                                    <td>Larry the Bird</td>
+                                    <td>@twitter</td>
+                                    <td>Larry the Bird</td>
+                                    <td>@twitter</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"><button class="btn bg-success text-light d-flex align-items-center">Buscar <img class="ms-2" src="./img/search.svg"></button></th>
+                                    <td>
+                                        <input type="text">
+                                    </td>
+                                    <td>
+                                        <input type="text">
+                                    </td>
+                                    <td>
+                                        <input type="text">
+                                    </td>
+                                    <td>
+                                        <input type="text">
+                                    </td>
+                                    <td>
+                                        <input type="text">
+                                    </td>
+                                    <td>
+                                        <input type="text">
+                                    </td>
+                                    <td><input type="text">
+                                    </td>
+                                    <td>
+                                        <input type="text">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"><button class="btn bg-primary text-light d-flex align-items-center">Reiniciar <img class="ms-2" src="./img/arrow-counterclockwise.svg"></button></th>
                                     <td>
                                         <input type="text">
                                     </td>
@@ -201,6 +375,10 @@
             </div>
         </div>
     </main>
+
+    <footer class="text-center bg-warning p-3 mt-5">
+        <p class="p-0 m-0">Sistemas DGContA 2018-2023 v1.1.4</p>
+    </footer>
 
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>

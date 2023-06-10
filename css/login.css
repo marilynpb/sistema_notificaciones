@@ -1,0 +1,19 @@
+body{
+    background: #FECA2C;
+    background: linear-gradient(to right, #f8f2de,  #FECA2C);
+}
+
+.bg{
+    background-image: url('../img/carrusel/bg1.jpg');
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+a{
+    text-decoration: none;
+}
+
+.container-login{
+    height: 95vh;
+}
