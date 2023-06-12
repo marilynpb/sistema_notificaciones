@@ -1,0 +1,99 @@
+@import url('./variables_globales.css');
+@font-face {
+    font-family: 'Product-sans';
+    src: url('../font/product-sans/Product\ Sans\ Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+    background: #FFFFFF;
+    font-family: 'Product-sans', 'sans-serif';
+}
+
+main{
+    min-height: 77vh!important;
+}
+
+.btn-nuevo-establecimiento{
+    background-color: #007BC7; 
+    width: 350px; 
+    font-size: 25px;
+}
+
+.btn-nuevo-establecimiento:hover{
+    background-color: #069cf9; 
+}
+
+.btn-nueva-razon{
+    background-color: #007BC7; 
+    width: 350px; 
+    font-size: 25px;
+}
+
+.btn-nueva-razon:hover{
+    background-color: #069cf9; 
+}
+
+.container-table{
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    background-color: #ECF0F4;
+}
+
+.container-table input{
+    border-radius: 5px;
+    height: 40px;
+    border: 1px solid #26252565;
+}
+
+.mostrar{
+    background-color: #FFFFFF!important;
+    font-weight: bold;
+}
+
+.mostrar:hover{
+    background-color: #FFFFFF;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+.container-table td, th, tr{
+    border: 1px solid #26252543;
+} 
+
+.bg-titles th,.bg-titles td{
+    color: #3a3a39;
+    font-weight: bold;
+    text-align: center;
+    background-color: rgb(246, 229, 185);
+}
+
+table{
+    background: #FFFFFF!important;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+.bg-buscar th, .bg-buscar td{
+    background-color: rgba(46, 139, 86, 0.317);
+}
+
+.btn-buscar:hover{
+    background-color: rgba(4, 246, 109, 0.317)!important;
+}
+
+.btn-reiniciar:hover{
+    background-color: rgb(44, 143, 243)!important;
+}
+
+.bg-reiniciar th, .bg-reiniciar td{
+    background-color: rgba(30, 143, 255, 0.221);
+}
+
+.accordion-button{
+    background-color: #38485C!important;
+    color: #FFFFFF!important;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.accordion-button:hover{
+    background-color: #516884!important;
+}
+

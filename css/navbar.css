@@ -1,0 +1,31 @@
+nav{
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+
+nav li{
+    font-size: 20px
+}
+
+.offcanvas-body{
+    background-color: #FFFFFF;
+}
+
+.offcanvas-header p{
+    letter-spacing: 1.5px; 
+    color: rgb(161, 158, 158); 
+    font-size: 17px;
+}
+
+.offcanvas-header p:hover{
+    color: rgb(161, 158, 158); 
+}
+
+nav h5{
+    color: #38373A;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.nav-item a:hover{
+    background-color: #FFC106;
+}
