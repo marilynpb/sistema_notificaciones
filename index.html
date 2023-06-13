@@ -3,587 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/home.css">
-    <link rel="stylesheet" href="./css/navbar.css">
-    <link rel="stylesheet" href="./css/variables_globales.css">
-    <title>Sistema Integral de Gestion Ambiental</title>
+    <title>Notificaciones</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/login.css">
+    <title>Login</title>
 </head>
 <body>
-    <nav class="navbar bg-warning m-0 p-0 pt-2 px-5">
-        <div class="container-fluid">
-            <ul class="d-flex list-unstyled mt-1">
-                <li class="mx-2">
-                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                </li>
-                <li><img src="./img/logo-BA.png" width="130px"></li>
-            </ul>
-            <ul>
-                <li class="list-unstyled"><h5 class="m-2 mt-3">Sistema Integral de Gestion Ambiental</h5></li>
-            </ul>
-            <ul class="d-flex list-unstyled mt-1">
-                <li class="mx-3">
-                    <a class="nav-link" href="#"><img src="./img/bell.svg" width="22px"></a>
-                </li>
-                <li class="mx-3">
-                    <a class="nav-link" href="#"><img src="./img/envelope-open.svg" width="22px"></a>
-                </li>
-                <li class="mx-3 dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    <img src="./img/person (1).svg" width="22px"> Usuario
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <li><a class="dropdown-item" href="#"><img src="./img/box-arrow-left.svg"> Salir</a></li>
-                    </ul>
-                </li>
-                
-            </ul>
-            <div class="offcanvas offcanvas-start bg-warning" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-                <div class="offcanvas-header">
-                    <p class="nav-link active fw-bold" aria-current="page"><img src="./img/networkGrey.png">Sistemas DGContA</p>
-                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    <div class="container container-login my-4 rounded shadow bg-black">
+        <div class="row align-items-stretch h-100">
+            <div class="col bg d-none d-lg-block col-md-5 col-lg-5 col-xl-6" id="bg-div">
+            </div>
+            <div class="col bg-white p-5 rounded-end">
+                <div class="text-end mt-3">
+                    <img src="../img/logoBA.png" width="150" alt="logoBA">
                 </div>
-                <div class="offcanvas-body">
-                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="./index.html"><img src="./img/slash-circle.svg"> Home</a>
-                        </li>
+                <h2 class="fw-bold text-center py-5">Sistema Integral de Gestion Ambiental</h2>
 
-                        <hr class="p-0 m-0 mb-2">
-
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                <img src="./img/file-earmark.svg"> Notificaciones
-                            </a>
-                            <ul class="dropdown-menu border-0 mt-0 pt-0 px-2 bg-transparent">
-                                <li><a class="dropdown-item" href="#"><img src="./img/slash-circle.svg"> Inbox</a></li>
-                                <li><a class="dropdown-item" href="#"><img src="./img/slash-circle.svg"> Programación</a></li>
-                                <li><a class="dropdown-item" href="#"><img src="./img/slash-circle.svg"> Pedidos</a></li>
-                                <li><a class="dropdown-item" href="#"><img src="./img/slash-circle.svg"> Autorizar</a></li>
-                            </ul>
-                        </li>
-
-                        <hr class="p-0 m-0 mb-2">
-
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                <img src="./img/file-earmark.svg"> Usuarios
-                            </a>
-                            <ul class="dropdown-menu border-0 mt-0 pt-0 px-2 bg-transparent">
-                                <li><a class="dropdown-item" href="#"><img src="./img/slash-circle.svg"> Cambiar Contraseña</a></li>
-                                <li><a class="dropdown-item" href="#"><img src="./img/slash-circle.svg"> Administración</a></li>
-                            </ul>
-                        </li>
-
-                        <hr class="p-0 m-0 mb-2">
-
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                <img src="./img/file-earmark.svg"> Fajas
-                            </a>
-                            <ul class="dropdown-menu border-0 mt-0 pt-0 px-2 bg-transparent">
-                                <li><a class="dropdown-item" href="#"><img src="./img/slash-circle.svg"> Asignación</a></li>
-                                <li><a class="dropdown-item" href="#"><img src="./img/slash-circle.svg"> Cargar Fajas y Revisión</a></li>
-                            </ul>
-                        </li>
-
-                        <hr class="p-0 m-0 mb-2">
-
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                <img src="./img/file-earmark.svg"> Actas
-                            </a>
-                            <ul class="dropdown-menu border-0 mt-0 pt-0 px-2 bg-transparent">
-                                <li><a class="dropdown-item" href="#"><img src="./img/slash-circle.svg"> Asignación</a></li>
-                                <li><a class="dropdown-item" href="#"><img src="./img/slash-circle.svg"> Cargar Actas y Revisión</a></li>
-                                <li><a class="dropdown-item" href="#"><img src="./img/slash-circle.svg"> Envío a Boldt</a></li>
-                            </ul>
-                        </li>
-
-                        <hr class="p-0 m-0 mb-2">
-
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                <img src="./img/file-earmark.svg"> Reporte Diario
-                            </a>
-                            <ul class="dropdown-menu border-0 mt-0 pt-0 px-2 bg-transparent">
-                                <li><a class="dropdown-item" href="#"><img src="./img/slash-circle.svg"> Alta CheckList</a></li>
-                                <li><a class="dropdown-item" href="#"><img src="./img/slash-circle.svg"> Autorización Checklist</a></li>
-                                <li><a class="dropdown-item" href="#"><img src="./img/slash-circle.svg"> Cierre CheckList</a></li>
-                                <li><a class="dropdown-item" href="#"><img src="./img/slash-circle.svg"> Finalizados</a></li>
-                                <li><a class="dropdown-item" href="#"><img src="./img/slash-circle.svg"> Anulados</a></li>
-                                <li><a class="dropdown-item" href="#"><img src="./img/slash-circle.svg"> ReInspecciones</a></li>
-                            </ul>
-                        </li>
-
-                        <hr class="p-0 m-0 mb-2">
-
-                        <li class="nav-item">
-                            <a class="nav-link" href="#"><img src="./img/slash-circle.svg"> Control Área</a>
-                        </li>
-
-                        <hr class="p-0 m-0 mb-2">
-
-                        <li class="nav-item">
-                            <a class="nav-link" href="#"><img src="./img/slash-circle.svg"> Programación Área</a>
-                        </li>
-
-                        <hr class="p-0 m-0 mb-2">
-                        
-
-                        <li class="nav-item">
-                            <a class="nav-link" href="#"><img src="./img/slash-circle.svg"> Inspectores</a>
-                        </li>
-
-                        <hr class="p-0 m-0 mb-2">
-
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                <img src="./img/file-earmark.svg"> Laboratorio
-                            </a>
-                            <ul class="dropdown-menu border-0 mt-0 pt-0 px-2 bg-transparent">
-                                <li><a class="dropdown-item" href="#"><img src="./img/slash-circle.svg"> Pedidos</a></li>
-                                <li><a class="dropdown-item" href="#"><img src="./img/slash-circle.svg"> Muestras</a></li>
-                            </ul>
-                        </li>
-
-                        <hr class="p-0 m-0 mb-2">
-
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                <img src="./img/file-earmark.svg"> Admin Panel
-                            </a>
-                            <ul class="dropdown-menu border-0 mt-0 pt-0 px-2 bg-transparent">
-                                <li><a class="dropdown-item" href="#"><img src="./img/slash-circle.svg"> Unir Establecimiento</a></li>
-                                <li><a class="dropdown-item" href="#"><img src="./img/slash-circle.svg"> Subir Checklist</a></li>
-                            </ul>
-                        </li>
-
-                        <hr class="p-0 m-0 mb-2">
-
-                    </ul>
-                </div>
+                <!-- Login -->
+                <form action="#">
+                    <div class="mb-4">
+                        <label for="email" class="form-label">Usuario (CUIL/CUIT)</label>
+                        <input type="text" class="form-control" placeholder="Ingrese su Cuil/CUIT sin guiones ni puntos">
+                    </div>
+                    <div class="mb-4">
+                        <label for="password" class="form-label">Contraseña</label>
+                        <input type="password" class="form-control" name="password" placeholder="Ingrese su contraseña">
+                    </div>
+                    <div class="mb-4 form-check">
+                        <input type="checkbox" name="connected" class="form-check-input">
+                        <label for="connected" class="form-check-label">Remember me</label>
+                    </div>
+                    <div class="d-grid">
+                        <button type="submit" class="btn btn-warning text-light fw-bold">Iniciar Sesión</button>
+                    </div>
+                    <div class="my-3">
+                        <span><a class="text-warning fw-bold" href="#">¿Olvidaste tu contraseña?</a></span>
+                    </div>
+                </form>
             </div>
         </div>
-    </nav>
+    </div>
 
-    <main>
-        <div class="container-fluid row my-5 mx-auto px-5">
-            <div class="col-12 text-center d-flex justify-content-center align-items-center my-4">
-                <a class="btn btn-nuevo-establecimiento btn-lg mx-3 d-flex justify-content-center align-items-center text-light">
-                    <img class="me-2" src="./img/plus-circle (1).svg"> Nuevo establecimiento
-                </a>
-                <a class="btn btn-nueva-razon btn-lg mx-3 d-flex justify-content-center align-items-center text-light">
-                    <img class="me-2" src="./img/plus-circle (1).svg"> Nueva razón social
-                </a>
-            </div>
 
-            <div class="container-table accordion p-0 rounded-2 mt-5" id="accordionExample1">
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                            <img class="me-2" src="./img/folder2-open.svg"> ESTABLECIMIENTOS                 
-                        </button>                        
-                    </h2>
-                    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample1">
-                        <div class="accordion-body">
-                            <div class="text-center">
-                                <div class="d-flex justify-content-between">                                
-                                    <label class="fw-bold">Seleccione la cantidad de registro que desea ver
-                                    <select class="text-center">
-                                        <option>5</option>
-                                        <option>20</option>
-                                        <option>50</option>
-                                        <option>100</option>
-                                        <option>150</option>
-                                        <option>200</option>
-                                        <option>Todos</option>
-                                    </select>
-                                    </label>
-                                    <button class="mostrar btn btn-secondary rounded-5 bg-transparent text-dark d-flex justify-content-center align-items-center">Pasar a Excel <img class="ms-2" src="./img/file-earmark-spreadsheet (1).svg"></button>
-                                </div>
+    <script>
+        // Obtén el elemento div por su ID
+        const bgDiv = document.getElementById("bg-div");
+      
+        // Define una matriz con las rutas de las imágenes
+        const imagePaths = [
+          "../img/carrusel/bg1.jpg",
+          "../img/carrusel/bg2.jpg",
+          "../img/carrusel/bg1.jpg",
+          "../img/carrusel/bg2.jpg"
+        ];
+      
+        let index = 0;
+      
+        // Función para cambiar la ruta del fondo
+        function changeBackground() {
+          bgDiv.style.backgroundImage = `url('${imagePaths[index]}')`;
+          index = (index + 1) % imagePaths.length; // Incrementa el índice circularmente
+        }
+      
+        // Cambia la imagen cada 10 segundos
+        setInterval(changeBackground, 5000);
+      
+        // Carga la primera imagen por defecto
+        window.addEventListener("DOMContentLoaded", () => {
+          changeBackground();
+        });
+      </script>
+      
 
-                                <form class="overflow-scroll mt-3">
-                                    <table class="table">
-                                        <tbody>
-                                            <tr class="bg-titles">
-                                                <th scope="row">Acción</th>
-                                                <td>Larry the Bird</td>
-                                                <td>@twitter</td>
-                                                <td>Larry the Bird</td>
-                                                <td>@twitter</td>
-                                                <td>Larry the Bird</td>
-                                                <td>@twitter</td>
-                                                <td>Larry the Bird</td>
-                                                <td>@twitter</td>
-                                            </tr>
-                                            <tr class="bg-buscar">
-                                                <th scope="row"><button class="btn-buscar btn bg-success text-light d-flex align-items-center">Buscar <img class="ms-2" src="./img/search.svg"></button></th>
-                                                <td>
-                                                    <input type="text">
-                                                </td>
-                                                <td>
-                                                    <input type="text">
-                                                </td>
-                                                <td>
-                                                    <input type="text">
-                                                </td>
-                                                <td>
-                                                    <input type="text">
-                                                </td>
-                                                <td>
-                                                    <input type="text">
-                                                </td>
-                                                <td>
-                                                    <input type="text">
-                                                </td>
-                                                <td><input type="text">
-                                                </td>
-                                                <td>
-                                                    <input type="text">
-                                                </td>
-                                            </tr>
-                                            <tr class="bg-reiniciar">
-                                                <th scope="row"><button class="btn-reiniciar btn bg-primary text-light d-flex align-items-center">Reiniciar <img class="ms-2" src="./img/arrow-counterclockwise.svg"></button></th>
-                                                <td>
-                                                    <input type="text">
-                                                </td>
-                                                <td>
-                                                    <input type="text">
-                                                </td>
-                                                <td>
-                                                    <input type="text">
-                                                </td>
-                                                <td>
-                                                    <input type="text">
-                                                </td>
-                                                <td>
-                                                    <input type="text">
-                                                </td>
-                                                <td>
-                                                    <input type="text">
-                                                </td>
-                                                <td><input type="text">
-                                                </td>
-                                                <td>
-                                                    <input type="text">
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </form>
-                            </div>                    
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="container-table accordion p-0 rounded-2 mt-5" id="accordionExample2">
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
-                            <img class="me-2" src="./img/folder2-open.svg"> INSPECCIONES
-                        </button>
-                    </h2>
-                    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample2">
-                        <div class="accordion-body">
-                        <div class="text-center">
-                            <div class="d-flex justify-content-between">                                
-                                <label class="fw-bold">Seleccione la cantidad de registro que desea ver
-                                <select class="text-center">
-                                    <option>5</option>
-                                    <option>20</option>
-                                    <option>50</option>
-                                    <option>100</option>
-                                    <option>150</option>
-                                    <option>200</option>
-                                    <option>Todos</option>
-                                </select>
-                                </label>
-                                <button class="mostrar btn btn-secondary rounded-5 bg-transparent text-dark d-flex justify-content-center align-items-center">Pasar a Excel <img class="ms-2" src="./img/file-earmark-spreadsheet (1).svg"></button>
-                            </div>
-                                <form class="overflow-scroll mt-3">
-                                    <table class="table">
-                                        <tbody>
-                                            <tr class="bg-titles">
-                                                <th scope="row">Acción</th>
-                                                <td>Larry the Bird</td>
-                                                <td>@twitter</td>
-                                                <td>Larry the Bird</td>
-                                                <td>@twitter</td>
-                                                <td>Larry the Bird</td>
-                                                <td>@twitter</td>
-                                                <td>Larry the Bird</td>
-                                                <td>@twitter</td>
-                                            </tr>
-                                            <tr class="bg-buscar">
-                                                <th scope="row"><button class="btn-buscar btn bg-success text-light d-flex align-items-center">Buscar <img class="ms-2" src="./img/search.svg"></button></th>
-                                                <td>
-                                                    <input type="text">
-                                                </td>
-                                                <td>
-                                                    <input type="text">
-                                                </td>
-                                                <td>
-                                                    <input type="text">
-                                                </td>
-                                                <td>
-                                                    <input type="text">
-                                                </td>
-                                                <td>
-                                                    <input type="text">
-                                                </td>
-                                                <td>
-                                                    <input type="text">
-                                                </td>
-                                                <td><input type="text">
-                                                </td>
-                                                <td>
-                                                    <input type="text">
-                                                </td>
-                                            </tr>
-                                            <tr class="bg-reiniciar">
-                                                <th scope="row"><button class="btn-reiniciar btn bg-primary text-light d-flex align-items-center">Reiniciar <img class="ms-2" src="./img/arrow-counterclockwise.svg"></button></th>
-                                                <td>
-                                                    <input type="text">
-                                                </td>
-                                                <td>
-                                                    <input type="text">
-                                                </td>
-                                                <td>
-                                                    <input type="text">
-                                                </td>
-                                                <td>
-                                                    <input type="text">
-                                                </td>
-                                                <td>
-                                                    <input type="text">
-                                                </td>
-                                                <td>
-                                                    <input type="text">
-                                                </td>
-                                                <td><input type="text">
-                                                </td>
-                                                <td>
-                                                    <input type="text">
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </form>
-                            </div>                    
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="container-table accordion p-0 rounded-2 mt-5" id="accordionExample3">
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
-                            <img class="me-2" src="./img/folder2-open.svg"> CÉDULAS
-                        </button>
-                    </h2>
-                    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample3">
-                        <div class="accordion-body">
-                        <div class="text-center">
-                            <div class="d-flex justify-content-between">                                
-                                <label class="fw-bold">Seleccione la cantidad de registro que desea ver
-                                <select class="text-center">
-                                    <option>5</option>
-                                    <option>20</option>
-                                    <option>50</option>
-                                    <option>100</option>
-                                    <option>150</option>
-                                    <option>200</option>
-                                    <option>Todos</option>
-                                </select>
-                                </label>
-                                <button class="mostrar btn btn-secondary rounded-5 bg-transparent text-dark d-flex justify-content-center align-items-center">Pasar a Excel <img class="ms-2" src="./img/file-earmark-spreadsheet (1).svg"></button>
-                            </div>
-                                <form class="overflow-scroll mt-3">
-                                    <table class="table">
-                                        <tbody>
-                                            <tr class="bg-titles">
-                                                <th scope="row">Acción</th>
-                                                <td>Larry the Bird</td>
-                                                <td>@twitter</td>
-                                                <td>Larry the Bird</td>
-                                                <td>@twitter</td>
-                                                <td>Larry the Bird</td>
-                                                <td>@twitter</td>
-                                                <td>Larry the Bird</td>
-                                                <td>@twitter</td>
-                                            </tr>
-                                            <tr class="bg-buscar">
-                                                <th scope="row"><button class="btn-buscar btn bg-success text-light d-flex align-items-center">Buscar <img class="ms-2" src="./img/search.svg"></button></th>
-                                                <td>
-                                                    <input type="text">
-                                                </td>
-                                                <td>
-                                                    <input type="text">
-                                                </td>
-                                                <td>
-                                                    <input type="text">
-                                                </td>
-                                                <td>
-                                                    <input type="text">
-                                                </td>
-                                                <td>
-                                                    <input type="text">
-                                                </td>
-                                                <td>
-                                                    <input type="text">
-                                                </td>
-                                                <td><input type="text">
-                                                </td>
-                                                <td>
-                                                    <input type="text">
-                                                </td>
-                                            </tr>
-                                            <tr class="bg-reiniciar">
-                                                <th scope="row"><button class="btn-reiniciar btn bg-primary text-light d-flex align-items-center">Reiniciar <img class="ms-2" src="./img/arrow-counterclockwise.svg"></button></th>
-                                                <td>
-                                                    <input type="text">
-                                                </td>
-                                                <td>
-                                                    <input type="text">
-                                                </td>
-                                                <td>
-                                                    <input type="text">
-                                                </td>
-                                                <td>
-                                                    <input type="text">
-                                                </td>
-                                                <td>
-                                                    <input type="text">
-                                                </td>
-                                                <td>
-                                                    <input type="text">
-                                                </td>
-                                                <td><input type="text">
-                                                </td>
-                                                <td>
-                                                    <input type="text">
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </form>
-                            </div>                    
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="container-table accordion p-0 rounded-2 mt-5" id="accordionExample4">
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
-                        <img class="me-2" src="./img/folder2-open.svg"> DISPOSICIONES
-                        </button>
-                    </h2>
-                    <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample4">
-                        <div class="accordion-body">
-                        <div class="text-center">
-                            <div class="d-flex justify-content-between">                                
-                                <label class="fw-bold">Seleccione la cantidad de registro que desea ver
-                                <select class="text-center">
-                                    <option>5</option>
-                                    <option>20</option>
-                                    <option>50</option>
-                                    <option>100</option>
-                                    <option>150</option>
-                                    <option>200</option>
-                                    <option>Todos</option>
-                                </select>
-                                </label>
-                                <button class="mostrar btn btn-secondary rounded-5 bg-transparent text-dark d-flex justify-content-center align-items-center">Pasar a Excel <img class="ms-2" src="./img/file-earmark-spreadsheet (1).svg"></button>
-                            </div>
-                                <form class="overflow-scroll mt-3">
-                                    <table class="table">
-                                        <tbody>
-                                            <tr class="bg-titles">
-                                                <th scope="row">Acción</th>
-                                                <td>Larry the Bird</td>
-                                                <td>@twitter</td>
-                                                <td>Larry the Bird</td>
-                                                <td>@twitter</td>
-                                                <td>Larry the Bird</td>
-                                                <td>@twitter</td>
-                                                <td>Larry the Bird</td>
-                                                <td>@twitter</td>
-                                            </tr>
-                                            <tr class="bg-buscar">
-                                                <th scope="row"><button class="btn-buscar btn bg-success text-light d-flex align-items-center">Buscar <img class="ms-2" src="./img/search.svg"></button></th>
-                                                <td>
-                                                    <input type="text">
-                                                </td>
-                                                <td>
-                                                    <input type="text">
-                                                </td>
-                                                <td>
-                                                    <input type="text">
-                                                </td>
-                                                <td>
-                                                    <input type="text">
-                                                </td>
-                                                <td>
-                                                    <input type="text">
-                                                </td>
-                                                <td>
-                                                    <input type="text">
-                                                </td>
-                                                <td><input type="text">
-                                                </td>
-                                                <td>
-                                                    <input type="text">
-                                                </td>
-                                            </tr>
-                                            <tr class="bg-reiniciar">
-                                                <th scope="row"><button class="btn-reiniciar btn bg-primary text-light d-flex align-items-center">Reiniciar <img class="ms-2" src="./img/arrow-counterclockwise.svg"></button></th>
-                                                <td>
-                                                    <input type="text">
-                                                </td>
-                                                <td>
-                                                    <input type="text">
-                                                </td>
-                                                <td>
-                                                    <input type="text">
-                                                </td>
-                                                <td>
-                                                    <input type="text">
-                                                </td>
-                                                <td>
-                                                    <input type="text">
-                                                </td>
-                                                <td>
-                                                    <input type="text">
-                                                </td>
-                                                <td><input type="text">
-                                                </td>
-                                                <td>
-                                                    <input type="text">
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </form>
-                            </div>                    
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </main>
-
-    <footer class="text-center bg-warning p-3 mt-5">
-        <p class="p-0 m-0">Sistemas DGContA 2018-2023 v1.1.4</p>
-    </footer>
-
-    
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
+    </script>
 </body>
 </html>

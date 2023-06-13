@@ -1,0 +1,26 @@
+@import url('./variables_globales.css');
+@font-face {
+    font-family: 'Product-sans';
+    src: url('../font/product-sans/Product\ Sans\ Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+main{
+    min-height: 68vh!important;
+}
+
+.tabs-content{
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    background-color: #ECF0F4;
+    font-family: 'Product-sans';
+    text-align: center;
+}
+
+.tabs-content input{
+    width: 100%;
+}
+
+.tabs-content td, th, tr{
+    border: 1px solid #26252543;
+} 
