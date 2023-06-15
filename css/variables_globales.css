@@ -11,3 +11,32 @@
     --bg-mostrar-inspecciones: '#E4E1E1';
 }
 
+*{
+    color: #4e4d50;
+    font-size: 17px;
+}
+
+input, select{
+    border-radius: 5px;
+    height: 40px;
+    border: 1px solid #26252565;
+    font-size: 18px;
+}
+
+label{
+    font-size: 18px;
+    font-weight: bold;
+    color: #77777a;
+}
+
+.btn-guardar{
+    border: 2px solid seagreen;
+    color: seagreen;
+    font-weight: bold;
+}
+
+.btn-guardar:hover{
+    background-color: seagreen;
+    color: #ffffff;
+    font-weight: lighter;
+}

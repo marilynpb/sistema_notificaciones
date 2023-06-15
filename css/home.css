@@ -15,35 +15,23 @@ main{
     min-height: 77vh!important;
 }
 
-.btn-nuevo-establecimiento{
+.btn-nuevo-establecimiento, .btn-nueva-razon{
     background-color: #007BC7; 
     width: 350px; 
     font-size: 25px;
 }
 
-.btn-nuevo-establecimiento:hover{
-    background-color: #069cf9; 
-}
-
-.btn-nueva-razon{
+.btn-nuevo-establecimiento:active, .btn-nueva-razon:active{
     background-color: #007BC7; 
-    width: 350px; 
-    font-size: 25px;
 }
 
-.btn-nueva-razon:hover{
+.btn-nuevo-establecimiento:hover, .btn-nueva-razon:hover{
     background-color: #069cf9; 
 }
 
 .container-table{
     box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
     background-color: #ECF0F4;
-}
-
-.container-table input{
-    border-radius: 5px;
-    height: 40px;
-    border: 1px solid #26252565;
 }
 
 .mostrar{

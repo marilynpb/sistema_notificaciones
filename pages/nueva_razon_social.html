@@ -171,60 +171,11 @@
 
     <main class="pb-5">
         <div class="container-fluid container-establecimiento row mt-3 mx-auto px-5">
-            <h4 class="mt-4">Agregar nuevo Establecimiento</h4>
+            <h4 class="mt-4">Agregar nueva Razón Social</h4>
             <div class="container mt-3">
-                
-                <ul class="nav nav-tabs" id="myTab" role="tablist">
-                    <li class="nav-item" role="presentation">
-                        <button class="nav-link active" id="tab1-tab" data-bs-toggle="tab" data-bs-target="#tab1" type="button" role="tab" aria-controls="tab1" aria-selected="true">
-                            Carátula
-                        </button>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="tab2-tab" data-bs-toggle="tab" data-bs-target="#tab2" type="button" role="tab" aria-controls="tab2" aria-selected="false">
-                            Resultados Última Inspección
-                        </button>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="tab3-tab" data-bs-toggle="tab" data-bs-target="#tab3" type="button" role="tab" aria-controls="tab3" aria-selected="false">
-                            Observaciones
-                        </button>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="tab4-tab" data-bs-toggle="tab" data-bs-target="#tab4" type="button" role="tab" aria-controls="tab4" aria-selected="false">
-                            Inspecciones
-                        </button>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="tab5-tab" data-bs-toggle="tab" data-bs-target="#tab5" type="button" role="tab" aria-controls="tab5" aria-selected="false">
-                            Cédulas
-                        </button>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="tab6-tab" data-bs-toggle="tab" data-bs-target="#tab6" type="button" role="tab" aria-controls="tab6" aria-selected="false">
-                            Disposiciones
-                        </button>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="tab7-tab" data-bs-toggle="tab" data-bs-target="#tab7" type="button" role="tab" aria-controls="tab7" aria-selected="false">
-                            Historial
-                        </button>
-                    </li>
-                </ul>
-                
-                <div class="tab-content tabs-content mt-4 p-3" id="myTabContent">
+                <div class="tab-content tabs-content mt-2 p-3" id="myTabContent">
                     <div class="tab-pane fade show active" id="tab1" role="tabpanel" aria-labelledby="tab1-tab">
                         <form class="mt-3">
-                            <div class="row container-btns">
-                                <div class="col-6">
-                                    <p class="actualizacion">Actualmento no hay actualizaciones disponibles</p>
-                                    <button class="btn btn-md rounded-5 mb-4 px-4">Actuaciones</button>
-                                </div>
-                                <div class="col-6">
-                                    <p class="actualizacion">Actualmento no hay razón social</p>
-                                    <button class="btn btn-md rounded-5 mb-4 px-4">Razones Sociales</button>
-                                </div>
-                            </div>
                             <table class="table text-start mb-5">
                                 <tbody>
                                     <tr class="bg-titles">
@@ -260,84 +211,40 @@
 
                             <div class="row">
                                 <div class="col-4 text-start mb-4 px-4">
-                                    <label class="w-100" for="Estado">Estado
+                                    <label class="w-100" for="Apellido-Razón-Social">Apellido/Razón Social
+                                        <input type="text">
+                                    </label>
+                                </div>
+                                <div class="col-4 text-start mb-4 px-4">
+                                    <label class="w-100" for="Nombre-Nombre-Fantasía">Nombre/Nombre de Fantasía
+                                        <input type="text">
+                                    </label>
+                                </div>
+                                <div class="col-4 text-start mb-4 px-4">
+                                    <label class="w-100" for="CUIT">CUIT
+                                        <input type="text">
+                                    </label>
+                                </div>
+                                <div class="col-4 text-start mb-4 px-4">
+                                    <label class="w-100" for="Tipo-persona-jurídica">Tipo de persona jurídica
                                     </label>
                                     <select class="w-100">
                                         <option value="Seleccionar">Seleccionar</option>
                                     </select>
                                 </div>
                                 <div class="col-4 text-start mb-4 px-4">
-                                    <label class="w-100" for="EX-EESS">¿EX-EESS?
-                                    </label>
-                                    <select class="w-100">
-                                        <option value="Seleccionar">Seleccionar Si/No</option>
-                                    </select>
-                                </div>
-                                <div class="col-4 text-start mb-4 px-4">
-                                    <label class="w-100" for="Favorito">Favorito
-                                    </label>
-                                    <select class="w-100">
-                                        <option value="Seleccionar">Seleccionar Si/No</option>
-                                    </select>
-                                </div>
-
-                                <div class="col-4 text-start px-4">
-                                    <label class="w-100" for="E-mail">Rubro principal
-                                    </label>
-                                    <select class="w-100">
-                                        <option value="Rubro principal">Rubro principal</option>
-                                    </select>
-                                </div>
-                                <div class="col-4 text-start mb-4 px-4">
-                                    <label class="w-100" for="text">Extendido
-                                        <input type="text" placeholder="Rubro extendio del estacimiento">
+                                    <label class="w-100" for="E-mail">Teléfono
+                                        <input type="text">
                                     </label>
                                 </div>
-                                <div class="col-4 text-start mb-4 px-4">
-                                    <label class="w-100" for="Rubro">Rubro
-                                    </label>
-                                    <select class="w-100">
-                                        <option value="Rubro principal">Rubro principal</option>
-                                    </select>
-                                </div>
-
                                 <div class="col-4 text-start mb-4 px-4">
                                     <label class="w-100" for="E-mail">E-mail
                                         <input type="email">
                                     </label>
                                 </div>
-                                <div class="col-4 text-start mb-4 px-4">
-                                    <label class="w-100" for="E-mail">Bandera
-                                        <input type="text">
-                                    </label>
-                                </div>
-                                <div class="col-4 text-start mb-4 px-4">
-                                    <label class="w-100" for="E-mail">Teléfono
-                                        <input type="text">
-                                    </label>
-                                </div>
                             </div>
                             <button class="btn-guardar btn btn-md rounded-5 my-4 px-5">Guardar</button>
                         </form>
-                    </div>
-
-                    <div class="tab-pane fade" id="tab2" role="tabpanel" aria-labelledby="tab2-tab">
-                        Contenido de la pestaña 2
-                    </div>
-                    <div class="tab-pane fade" id="tab3" role="tabpanel" aria-labelledby="tab3-tab">
-                        Contenido de la pestaña 3
-                    </div>
-                    <div class="tab-pane fade" id="tab4" role="tabpanel" aria-labelledby="tab4-tab">
-                        Contenido de la pestaña 4
-                    </div>
-                    <div class="tab-pane fade" id="tab5" role="tabpanel" aria-labelledby="tab5-tab">
-                        Contenido de la pestaña 5
-                    </div>
-                    <div class="tab-pane fade" id="tab6" role="tabpanel" aria-labelledby="tab6-tab">
-                        Contenido de la pestaña 6
-                    </div>
-                    <div class="tab-pane fade" id="tab7" role="tabpanel" aria-labelledby="tab7-tab">
-                        Contenido de la pestaña 7
                     </div>
                 </div>
             </div>

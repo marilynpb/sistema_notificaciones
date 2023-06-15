@@ -22,5 +22,33 @@ main{
 }
 
 .tabs-content td, th, tr{
-    border: 1px solid #26252543;
+    border: 1px solid #2625251f;
+    font-size: 18px;
+    font-weight: bold;
+    color: #77777a;
 } 
+
+.nav-tabs .nav-link{
+    background-color: #38485C!important;
+    margin: 1px;
+    color: #FFFFFF!important;
+}
+
+.nav-tabs .active{
+    font-weight: bold;
+}
+
+.container-btns button{
+    background-color: #007BC7; 
+    color: #FFFFFF;
+}
+
+.container-btns button:hover{
+    background-color: #069cf9; 
+    color: #FFFFFF;
+}
+
+.actualizacion{
+    font-weight: bolder;
+    color: #77777a;
+}
