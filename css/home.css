@@ -1,16 +1,3 @@
-@import url('./variables_globales.css');
-@font-face {
-    font-family: 'Product-sans';
-    src: url('../font/product-sans/Product\ Sans\ Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-body{
-    background: #FFFFFF;
-    font-family: 'Product-sans', 'sans-serif';
-}
-
 main{
     min-height: 77vh!important;
 }

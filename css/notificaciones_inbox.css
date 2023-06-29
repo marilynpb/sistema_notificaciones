@@ -1,7 +1,7 @@
 @import url('./variables_globales.css');
 
 main{
-    min-height: 68vh!important;
+    min-height: 79.5vh!important;
 }
 
 .tabs-content{
@@ -9,10 +9,6 @@ main{
     background-color: #ECF0F4;
     font-family: 'Product-sans';
     text-align: center;
-}
-
-.tabs-content input{
-    width: 100%;
 }
 
 .tabs-content td, th, tr{

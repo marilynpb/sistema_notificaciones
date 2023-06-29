@@ -18,7 +18,7 @@
                         <span class="navbar-toggler-icon"></span>
                     </button>
                 </li>
-                <li><img src="../img/logo-BA.png" width="130px"></li>
+                <li><a href="./home.html"><img src="../img/logo-BA.png" width="130px"></a></li>
             </ul>
             <ul>
                 <li class="list-unstyled"><h5 class="m-2 mt-3">Sistema Integral de Gestion Ambiental</h5></li>
@@ -48,17 +48,17 @@
                 <div class="offcanvas-body">
                     <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="./index.html"><img src="../img/slash-circle.svg"> Home</a>
+                            <a class="nav-link active" aria-current="page" href="./home.html"><img src="../img/slash-circle.svg"> Home</a>
                         </li>
 
                         <hr class="p-0 m-0 mb-2">
 
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <a class="nav-link dropdown-toggle" href="" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 <img src="../img/file-earmark.svg"> Notificaciones
                             </a>
                             <ul class="dropdown-menu border-0 mt-0 pt-0 px-2 bg-transparent">
-                                <li><a class="dropdown-item" href="#"><img src="../img/slash-circle.svg"> Inbox</a></li>
+                                <li><a class="dropdown-item" href="./notificaciones_inbox.html"><img src="../img/slash-circle.svg"> Inbox</a></li>
                                 <li><a class="dropdown-item" href="#"><img src="../img/slash-circle.svg"> Programación</a></li>
                                 <li><a class="dropdown-item" href="#"><img src="../img/slash-circle.svg"> Pedidos</a></li>
                                 <li><a class="dropdown-item" href="#"><img src="../img/slash-circle.svg"> Autorizar</a></li>
@@ -72,7 +72,7 @@
                                 <img src="../img/file-earmark.svg"> Usuarios
                             </a>
                             <ul class="dropdown-menu border-0 mt-0 pt-0 px-2 bg-transparent">
-                                <li><a class="dropdown-item" href="#"><img src="../img/slash-circle.svg"> Cambiar Contraseña</a></li>
+                                <li><a class="dropdown-item" href="./usuario_cambiar_contraseña.html"><img src="../img/slash-circle.svg"> Cambiar Contraseña</a></li>
                                 <li><a class="dropdown-item" href="#"><img src="../img/slash-circle.svg"> Administración</a></li>
                             </ul>
                         </li>
@@ -191,14 +191,13 @@
                         <div class="accordion-body">
                             <div class="text-center">
                                 <div class="d-flex justify-content-between">                                
-                                    <label class="fw-bold">Seleccione la cantidad de registro que desea ver
+                                    <label class="fw-bold">Seleccione la cantidad de registros que desea ver
                                     <select class="text-center">
                                         <option>5</option>
                                         <option>20</option>
                                         <option>50</option>
                                         <option>100</option>
                                         <option>150</option>
-                                        <option>200</option>
                                         <option>Todos</option>
                                     </select>
                                     </label>
@@ -210,17 +209,21 @@
                                         <tbody>
                                             <tr class="bg-titles">
                                                 <th scope="row">Acción</th>
-                                                <td>Larry the Bird</td>
-                                                <td>@twitter</td>
-                                                <td>Larry the Bird</td>
-                                                <td>@twitter</td>
-                                                <td>Larry the Bird</td>
-                                                <td>@twitter</td>
-                                                <td>Larry the Bird</td>
-                                                <td>@twitter</td>
+                                                <td>Id</td>
+                                                <td>Estado</td>
+                                                <td>Rubro principal</td>
+                                                <td>Rubros</td>
+                                                <td>Direcciones</td>
+                                                <td>Comunas</td>
+                                                <td>Actuaciones</td>
+                                                <td>Razón social</td>
+                                                <td>CUIT</td>
+                                                <td>SMP</td>
+                                                <td>Favorito</td>
+                                                <td>CMR</td>
                                             </tr>
                                             <tr class="bg-buscar">
-                                                <th scope="row"><button class="btn-buscar btn bg-success text-light d-flex align-items-center">Buscar <img class="ms-2" src="../img/search.svg"></button></th>
+                                                <th scope="row"><button class="btn-buscar btn bg-success text-light d-flex align-items-center">Buscar <img class="ms-2" src="../img/search_white.svg"></button></th>
                                                 <td>
                                                     <input type="text">
                                                 </td>
@@ -229,6 +232,17 @@
                                                 </td>
                                                 <td>
                                                     <input type="text">
+                                                </td>
+                                                <td>
+                                                    <input type="text">
+                                                </td>
+                                                <td>
+                                                    <input type="text">
+                                                </td>
+                                                <td>
+                                                    <input type="text">
+                                                </td>
+                                                <td><input type="text">
                                                 </td>
                                                 <td>
                                                     <input type="text">
@@ -270,10 +284,31 @@
                                                 <td>
                                                     <input type="text">
                                                 </td>
+                                                <td>
+                                                    <input type="text">
+                                                </td>
+                                                <td>
+                                                    <input type="text">
+                                                </td>
+                                                <td><input type="text">
+                                                </td>
+                                                <td>
+                                                    <input type="text">
+                                                </td>
                                             </tr>
                                         </tbody>
                                     </table>
                                 </form>
+                                <nav class="pt-3 pb-1" aria-label="Page navigation">
+                                    <ul class="pagination justify-content-center">
+                                        <li class="page-item disabled">
+                                            <a class="page-link">Anterior</a>
+                                        </li>
+                                        <li class="page-item">
+                                            <a class="page-link" href="#">Siguiente</a>
+                                        </li>
+                                    </ul>
+                                </nav>
                             </div>                    
                         </div>
                     </div>
@@ -291,14 +326,13 @@
                         <div class="accordion-body">
                         <div class="text-center">
                             <div class="d-flex justify-content-between">                                
-                                <label class="fw-bold">Seleccione la cantidad de registro que desea ver
+                                <label class="fw-bold">Seleccione la cantidad de registros que desea ver
                                 <select class="text-center">
-                                    <option>5</option>
+                                    <option>10</option>
                                     <option>20</option>
                                     <option>50</option>
                                     <option>100</option>
                                     <option>150</option>
-                                    <option>200</option>
                                     <option>Todos</option>
                                 </select>
                                 </label>
@@ -309,14 +343,15 @@
                                         <tbody>
                                             <tr class="bg-titles">
                                                 <th scope="row">Acción</th>
-                                                <td>Larry the Bird</td>
-                                                <td>@twitter</td>
-                                                <td>Larry the Bird</td>
-                                                <td>@twitter</td>
-                                                <td>Larry the Bird</td>
-                                                <td>@twitter</td>
-                                                <td>Larry the Bird</td>
-                                                <td>@twitter</td>
+                                                <td>Id</td>
+                                                <td>Checklist</td>
+                                                <td>Fecha de Inspección</td>
+                                                <td>Área</td>
+                                                <td>Inspectores</td>
+                                                <td>Direcciones</td>
+                                                <td>Circuito</td>
+                                                <td>SMP</td>
+                                                <td>Comuna</td>
                                             </tr>
                                             <tr class="bg-buscar">
                                                 <th scope="row"><button class="btn-buscar btn bg-success text-light d-flex align-items-center">Buscar <img class="ms-2" src="../img/search.svg"></button></th>
@@ -339,6 +374,9 @@
                                                     <input type="text">
                                                 </td>
                                                 <td><input type="text">
+                                                </td>
+                                                <td>
+                                                    <input type="text">
                                                 </td>
                                                 <td>
                                                     <input type="text">
@@ -369,10 +407,23 @@
                                                 <td>
                                                     <input type="text">
                                                 </td>
+                                                <td>
+                                                    <input type="text">
+                                                </td>
                                             </tr>
                                         </tbody>
                                     </table>
                                 </form>
+                                <nav class="pt-3 pb-1" aria-label="Page navigation">
+                                    <ul class="pagination justify-content-center">
+                                        <li class="page-item disabled">
+                                            <a class="page-link">Anterior</a>
+                                        </li>
+                                        <li class="page-item">
+                                            <a class="page-link" href="#">Siguiente</a>
+                                        </li>
+                                    </ul>
+                                </nav>
                             </div>                    
                         </div>
                     </div>
@@ -390,9 +441,9 @@
                         <div class="accordion-body">
                         <div class="text-center">
                             <div class="d-flex justify-content-between">                                
-                                <label class="fw-bold">Seleccione la cantidad de registro que desea ver
+                                <label class="fw-bold">Seleccione la cantidad de registros que desea ver
                                 <select class="text-center">
-                                    <option>5</option>
+                                    <option>10</option>
                                     <option>20</option>
                                     <option>50</option>
                                     <option>100</option>
@@ -408,14 +459,15 @@
                                         <tbody>
                                             <tr class="bg-titles">
                                                 <th scope="row">Acción</th>
-                                                <td>Larry the Bird</td>
-                                                <td>@twitter</td>
-                                                <td>Larry the Bird</td>
-                                                <td>@twitter</td>
-                                                <td>Larry the Bird</td>
-                                                <td>@twitter</td>
-                                                <td>Larry the Bird</td>
-                                                <td>@twitter</td>
+                                                <td>Número</td>
+                                                <td>Tipo</td>
+                                                <td>Fecha de Notificación</td>
+                                                <td>Dirección</td>
+                                                <td>Comuna(cédula)</td>
+                                                <td>Nocturnidad</td>
+                                                <td>Estado</td>
+                                                <td>Notificador</td>
+                                                <td>Comuna(estado)</td>
                                             </tr>
                                             <tr class="bg-buscar">
                                                 <th scope="row"><button class="btn-buscar btn bg-success text-light d-flex align-items-center">Buscar <img class="ms-2" src="../img/search.svg"></button></th>
@@ -438,6 +490,9 @@
                                                     <input type="text">
                                                 </td>
                                                 <td><input type="text">
+                                                </td>
+                                                <td>
+                                                    <input type="text">
                                                 </td>
                                                 <td>
                                                     <input type="text">
@@ -468,10 +523,23 @@
                                                 <td>
                                                     <input type="text">
                                                 </td>
+                                                <td>
+                                                    <input type="text">
+                                                </td>
                                             </tr>
                                         </tbody>
                                     </table>
                                 </form>
+                                <nav class="pt-3 pb-1" aria-label="Page navigation">
+                                    <ul class="pagination justify-content-center">
+                                        <li class="page-item disabled">
+                                            <a class="page-link">Anterior</a>
+                                        </li>
+                                        <li class="page-item">
+                                            <a class="page-link" href="#">Siguiente</a>
+                                        </li>
+                                    </ul>
+                                </nav>
                             </div>                    
                         </div>
                     </div>
@@ -489,9 +557,9 @@
                         <div class="accordion-body">
                         <div class="text-center">
                             <div class="d-flex justify-content-between">                                
-                                <label class="fw-bold">Seleccione la cantidad de registro que desea ver
+                                <label class="fw-bold">Seleccione la cantidad de registros que desea ver
                                 <select class="text-center">
-                                    <option>5</option>
+                                    <option>10</option>
                                     <option>20</option>
                                     <option>50</option>
                                     <option>100</option>
@@ -507,14 +575,13 @@
                                         <tbody>
                                             <tr class="bg-titles">
                                                 <th scope="row">Acción</th>
-                                                <td>Larry the Bird</td>
-                                                <td>@twitter</td>
-                                                <td>Larry the Bird</td>
-                                                <td>@twitter</td>
-                                                <td>Larry the Bird</td>
-                                                <td>@twitter</td>
-                                                <td>Larry the Bird</td>
-                                                <td>@twitter</td>
+                                                <td>Número</td>
+                                                <td>Tipo</td>
+                                                <td>Fecha de Notificación</td>
+                                                <td>Dirección</td>
+                                                <td>Estado</td>
+                                                <td>Notificador</td>
+                                                <td>Levantada</td>
                                             </tr>
                                             <tr class="bg-buscar">
                                                 <th scope="row"><button class="btn-buscar btn bg-success text-light d-flex align-items-center">Buscar <img class="ms-2" src="../img/search.svg"></button></th>
@@ -537,9 +604,6 @@
                                                     <input type="text">
                                                 </td>
                                                 <td><input type="text">
-                                                </td>
-                                                <td>
-                                                    <input type="text">
                                                 </td>
                                             </tr>
                                             <tr class="bg-reiniciar">
@@ -564,13 +628,20 @@
                                                 </td>
                                                 <td><input type="text">
                                                 </td>
-                                                <td>
-                                                    <input type="text">
-                                                </td>
                                             </tr>
                                         </tbody>
                                     </table>
                                 </form>
+                                <nav class="pt-3 pb-1" aria-label="Page navigation">
+                                    <ul class="pagination justify-content-center">
+                                        <li class="page-item disabled">
+                                            <a class="page-link">Anterior</a>
+                                        </li>
+                                        <li class="page-item">
+                                            <a class="page-link" href="#">Siguiente</a>
+                                        </li>
+                                    </ul>
+                                </nav>
                             </div>                    
                         </div>
                     </div>
@@ -582,7 +653,6 @@
     <footer class="text-center bg-warning p-3 mt-5">
         <p class="p-0 m-0">Sistemas DGContA 2018-2023 v1.1.4</p>
     </footer>
-
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 </body>
