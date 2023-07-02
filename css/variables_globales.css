@@ -87,6 +87,7 @@ label{
 
 .btn-red{    
     background-color: rgb(196, 26, 26)!important;
+    color: #FFFFFF;
 }
 
 .btn-red:hover{
@@ -113,4 +114,13 @@ label{
     background-color: rgb(44, 143, 243);
     color: #FFFFFF;
     font-weight: lighter;
+}
+
+.btn-ver-usuario{
+    background-color: #e1e1e4;
+    border: 1px solid gray;
+}
+
+.btn-ver-usuario:hover{
+    font-weight: bold;
 }
